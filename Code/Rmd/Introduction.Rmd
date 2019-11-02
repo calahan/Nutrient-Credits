@@ -1,0 +1,8 @@
+```{r i_setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_knit$set(root.dir = "../../")
+```
+```{r i_settings, include=FALSE}
+source("Code/R/Settings.R")
+```
+# Introduction
