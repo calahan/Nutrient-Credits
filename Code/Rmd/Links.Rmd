@@ -1,1 +1,81 @@
-# Links
+An evaluation of nutrient nonpoint offset trading in Virginia- A role for agricultural nonpoint sources?
+
+Need to get ATS as a BMP.
+= = = = =
+Breaking Down Barriers- Priority Actions for Advancing Water Quality Trading
+
+Possible partners:
+
+American Farmland Trust
+Association of Clean Water Administrators
+Electric Power Research Institute
+Environmental Incentives
+Kieser & Associates, LLC
+Maryland Department of Agriculture
+National Association of Clean Water Agencies
+National Milk Producers Federation
+The Freshwater Trust
+The Ohio Farm Bureau Federation
+Troutman Sanders
+Willamette Partnership
+World Resources Institute
+With USDA as a technical advisor and U.S. EPA as an observer
+= = = = =
+Comparing Water Quality Trading Programs- What Lessons Are There To Learn?
+
+Trading basics
+
+International
+
+Some Existing Programs
+= = = = =
+How Nutrient Trading Could Help Restore the Chesapeake Bay
+
+WWI - template for a per-watershed analysis
+= = = = =
+Investigating the Cost- Effectiveness of Nutrient Credit Use As an Option for VDOT Stormwater Permitting Requirements
+
+{Nobles et al., 2014, #89488}
+
+August 2014
+
+Assess potential credit demand, focusing on James River, compare costs WQT v. BMPs.
+
+WQT: Water Quality Trading.
+BMP: not exactly our BMPs? “Structural BMPs are physical structures that are constructed onsite to mitigate the impacts of stormwater runoff.”
+
+I propose a new metric: Lost Credits for the Past N years.
+
+The goal here is to see how an ATS complex could be built that would trade in a WQT program.
+
+“Now, in addition to trading between point sources (PS-PS) or between point and nonpoint sources (PS-NPS), it is possible to trade between nonpoint sources (NPS-NPS)”
+
+Can we sell it to the VDOT. What is the possible credit demand, and how much ATS acreage is that?
+
+Their refs 8-14. Esp 12, a list of active programs that we might be able to flog.
+
+Credit users have been investing in their own remediation rather than purchasing others’, N and P the most used.
+
+Replicate their methods - we would need their database. Their equation 1 as derived in (18).
+
+What is linear development - pipelines, powerlines, etc?
+
+What is ROW? Right of way?
+
+Pre-construction cost: design, permitting, and contingency costs.
+
+1-lb P credits: 10,430 (James), 18,700 (Potomac). 17K - 20K (York); 14.7K - 16.45K (Rappahannock). What is the clearinghouse that generates the credits?
+
+Compare their costs with ATS costs for the same removal. Tables 2 & 3.
+= = = = =
+Mapping Potential Demand for Water Quality Trading in the United States
+
+Template for data science.
+= = = = =
+Maryland Trading and Offset Policy and Guidance Manual, Chesapeake Bay Watershed (Draft)
+= = = = =
+Nutrient and Sediment Reductions from Algal Flow-way Technologies
+= = = = =
+Nutrient Assimilation Services for Water Quality Credit Trading Programs
+= = = = =
+Microsoft Word - The Conservative Case for a Carbon Tax.docx

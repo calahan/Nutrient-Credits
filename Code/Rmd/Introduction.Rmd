@@ -6,3 +6,19 @@ knitr::opts_knit$set(root.dir = "../../")
 source("Code/R/Settings.R")
 ```
 # Introduction
+
+## Water Quality Trading
+E.g. nutrient credits, P and N.
+
+##
+Set the stage with basic economics
+
+Describe different approaches and their expected results
+
+Explain focus on Wastewater Trading and BMPs - other papers could focus on other approaches
+
+List of BMPs by jurisdiction/watershed
+
+Comparison of BMP costs per jurisdiction/watershed
+
+Appendix: Technical analyses of each BMP
