@@ -1,6 +1,6 @@
 ---
-title: "Title"
-author: "Author"
+title: "Project GreenClean"
+author: "Dean Calahan"
 output:
   bookdown::pdf_book:
     toc: False
@@ -13,10 +13,76 @@ link-citations: true
 ---
 ```{r c_setup, include=FALSE}
 knitr::opts_knit$set(root.dir = "../../")
+if("ATSLab" %in% .packages()) detach("package:ATSLab", unload = TRUE)
+library(ATSLab)
+
+fig_path <- "../../Visual Elements/Figures/"
+sh_path  <- "../sh/"
+site_len <- 100
+site_wid <- 100
+site_dep <- 6
+fw_len   <- 40
+fw_wid   <- 10
+fw_inset <- 1
+pl_hgt   <- 0.05
 ```
 \pagenumbering{gobble}
-\vspace{25mm}
-```{r c_figure, echo=FALSE, out.width="4 in", fig.align="center"}
+\vspace{24mm}
+```{r cover_figure, echo=FALSE, out.width="10 cm", fig.align="center"}
+site <- Site(
+    name = "GreenClean Cover Image Site",
+    len  = site_len,
+    wid  = site_wid,
+    dep  = site_dep
+)
+
+floway <- PipeFloway(
+  name = "GreenClean Cover Image Floway",
+  len  = fw_len,
+  wid  = fw_wid
+)
+floway$Build()
+
+fw_net_len <- floway$net_len
+fw_net_wid <- floway$net_wid
+fw_ct      <- floor((site_wid - 2 * fw_inset) / fw_net_wid)
+fw_sp      <- (site_wid - 2 * fw_inset - fw_ct * fw_net_wid) / (fw_ct - 1)
+
+fws <- lapply(
+    0:(fw_ct - 1),
+    function(a) {
+        return(floway$copy())
+    }
+)
+
+pl_wid <- fw_ct * fw_net_wid + (fw_ct - 1) * fw_sp
+plenum <- FrustumPlenum(
+    name  = "Cover Plenum",
+    len   = floway$net_len,
+    wid   = pl_wid,
+    hgt   = pl_hgt,
+    slope = 0.02
+)
+plenum$Build()
+plenum$AppendFloways(fws)
+
+pl_net_len <- plenum$net_len
+pl_net_wid <- plenum$net_wid
+pl_x_ins   <- (site_wid - pl_net_wid) / 2
+pl_y_ins   <- pl_x_ins
+
+site$Append(
+    list_name = "plenum",
+    obj = plenum,
+    ort = Orientation(
+        x = pl_x_ins,
+        y = pl_y_ins
+    )
+)
+
+site$Assy(paste0(fig_path, "Cover/Cover.scad"))
+system(paste0(sh_path, "Cover.sh"))
+
 #knitr::include_graphics("../../Cover.png")
 ```
 \newpage
